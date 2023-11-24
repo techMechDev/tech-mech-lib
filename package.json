@@ -1,20 +1,21 @@
 {
   "name": "tech-mech-lib",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "private": "false",
   "main": "./dist/index.js",
-  "types": "./dist/index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "test": "jest",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build-custom-properties": "node ./scripts/build-custom-properties.js"
   },
   "files": [
     "/dist"
   ],
   "keywords": [
     "componentes",
-    "typescript",
+    "components",
     "npm"
   ],
   "author": {

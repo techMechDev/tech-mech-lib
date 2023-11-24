@@ -1,7 +1,7 @@
 /** @type { import('@storybook/react').Preview } */
 import 'minireset.css'
-import '../styles/globals.css'
-import '../styles/tokens.css'
+import '../src/styles/globals.css'
+import '../src/styles/tokens.css'
 const preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },

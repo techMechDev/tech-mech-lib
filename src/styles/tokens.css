@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap');
+
+:root {
+    /* --- --- --- sizes and radius --- --- --- */
+    --border-size: 1px;
+    --radius-min: 4px;
+    --radius-base: 10px;
+    --radius-max: 20px;
+    --radius-polig: 30%;
+    --radius-round: 50%;
+
+    /* --- --- --- fonts --- --- --- */
+    --font-family: Poppins;
+    --font-size-sm: .8rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.2rem;
+    --font-weigth-400: 400;
+    --font-weigth-600: 600;
+    --font-weigth-900: 900;
+
+    /* --- --- --- color palette --- --- --- */
+    --color-primary: #ffd803;
+    --color-secondary: #fffffe;
+    --color-tertiary : #e3f6f5;/* #bae8e8; */
+    --color-quaternary: #d9d4e7;
+    --color-quinary: #eb2d52;
+    --color-headline: #272343;
+    --color-paragraph: #2d334a;
+    --background-color-light: #fffffe;
+    --background-color-dark: var(--color-headline);
+    --box-shadow-sm: 0px 4px 5px rgba(0, 0, 0, .07);
+    --box-shadow-base: 0px 4px 5px rgba(0, 0, 0, .17);
+    --box-shadow-lg: 0px 4px 5px rgba(0, 0, 0, .27);
+
+    /* --- --- --- Button --- --- --- */
+    --color-button: var(--color-headline);
+    --color-button-primary: var(--color-secondary);
+    --color-button-secondary: var(--color-primary);
+    --color-button-tertiary: var(--color-button);
+    --color-button-quaternary: var(--color-button);
+    --color-button-quinary: var(--color-secondary);
+    --border-color-button-primary: var(--color-primary);
+    --border-color-button-secondary: var(--color-primary);
+    --border-color-button-tertiary: var(--color-button-tertiary);
+    --border-color-button-quaternary: var(--color-button-quaternary);
+    --border-color-button-quinary: var(--color-button);
+    --border-button-size: var(--border-size);
+    --padding-button-sm: 8px 16px;
+    --padding-button-base: 10px 24px;
+    --padding-button-lg: 12px 36px;
+}

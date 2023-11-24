@@ -1,30 +1,70 @@
-.storybook-button {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  border: 0;
-  border-radius: 3em;
+.button {
+  font-family: var(--font-family), sans-serif;
+  font-weight: var(--font-weigth-600);
+  border-radius: var(--radius-base);
   cursor: pointer;
   display: inline-block;
   line-height: 1;
+  color: var(--color-button);
+  border: var(--border-button-size) solid transparent;
+  transition: filter 100ms ease-in-out;
 }
-.storybook-button--primary {
-  color: white;
-  background-color: var(--color-primary) ; /* #1ea7fd; */
+
+.button:hover {
+  filter: brightness(1.1);
+  transition-duration: 300ms;
 }
-.storybook-button--secondary {
-  color: #333;
-  background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+
+.button:active {
+  filter: brightness(.9);
+  box-shadow: none;
+  transition-duration: 100ms;
 }
-.storybook-button--small {
-  font-size: 12px;
-  padding: 10px 16px;
+
+.button-primary {
+  background-color: var(--color-primary);
+  color: var(--color-button-primary);
+  border-color: var(--border-color-button-primary);
 }
-.storybook-button--medium {
-  font-size: 14px;
-  padding: 11px 20px;
+
+.button-secondary {
+  background-color: var(--background-color-light);
+  color: var(--color-button-secondary);
+  border-color: var(--border-color-button-secondary);
 }
-.storybook-button--large {
-  font-size: 16px;
-  padding: 12px 24px;
+
+.button-tertiary {
+  background-color: var(--color-tertiary);
+  color: var(--color-button-tertiary);
+  border-color: var(--border-color-button-tertiary);
+}
+
+.button-quaternary {
+  background-color: var(--color-quaternary);
+  color: var(--color-button-quaternary);
+  border-color: var(--border-color-button-quaternary);
+}
+
+.button-quinary {
+  background-color: var(--color-quinary);
+  color: var(--color-button-quinary);
+  border-color: var(--border-color-button-quinary);
+}
+
+.button-small {
+  font-size: var(--font-size-sm);
+  padding: var(--padding-button-sm);
+  box-shadow: var(--box-shadow-sm);
+}
+
+.button-medium {
+  font-size: var(--font-size-base);
+  padding: var(--padding-button-base);
+  box-shadow: var(--box-shadow-base);
+}
+
+.button-large {
+  font-size: var(--font-size-lg);
+  padding: var(--padding-button-lg);
+  box-shadow: var(--box-shadow-lg);
 }

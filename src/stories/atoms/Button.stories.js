@@ -4,6 +4,9 @@ import { Button } from '../../';
 export default {
   title: 'Example/Button',
   component: Button,
+  args: {
+    children: 'Button'
+   },
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'centered',
@@ -19,35 +22,56 @@ export default {
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Primary = {
   args: {
-    primary: true,
-    label: 'Button',
+    type: 'primary',
+    children: 'Primary'
   },
 };
 
 export const Secondary = {
   args: {
-    label: 'Button',
+    type: 'secondary',
+    children: 'Secondary'
+  },
+};
+export const Tertiary = {
+  args: {
+    type: 'tertiary',
+    children: 'Tertiary'
+  },
+};
+
+export const Quaternary = {
+  args: {
+    type: 'quaternary',
+    children: 'Quaternary'
+  },
+};
+
+export const Quinary = {
+  args: {
+    type: 'quinary',
+    children: 'Quinary'
   },
 };
 
 export const Large = {
   args: {
     size: 'large',
-    label: 'Button',
+    children: 'Button'
   },
 };
 
 export const Small = {
   args: {
     size: 'small',
-    label: 'Button',
+    children: 'Button'
   },
 };
 
 export const Warning = {
   args: {
-    primary: true,
-    label: 'Delete now',
+    type: 'quinary',
+    children: 'Delete now',
     backgroundColor: 'red',
   }
 };
