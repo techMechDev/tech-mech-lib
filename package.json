@@ -1,14 +1,17 @@
 {
-  "name": "tech-mech-lib",
-  "version": "0.0.1",
+  "name": "my-webpack-project",
+  "version": "1.0.0",
   "private": "false",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack --mode=production --node-env=production",
     "test": "jest",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build-custom-properties": "node ./scripts/build-custom-properties.js"
+    "build-custom-properties": "node ./scripts/build-custom-properties.js",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch"
   },
   "files": [
     "/dist"
@@ -36,8 +39,10 @@
     "@storybook/react": "^7.5.3",
     "@storybook/react-webpack5": "^7.5.3",
     "@storybook/testing-library": "^0.2.2",
+    "@webpack-cli/generators": "^3.0.7",
     "babel-loader": "^9.1.3",
     "css-loader": "^6.8.1",
+    "mini-css-extract-plugin": "^2.7.6",
     "storybook": "^7.5.3",
     "style-loader": "^3.3.3",
     "webpack": "^5.89.0",
@@ -47,5 +52,6 @@
     "minireset.css": "^0.0.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "description": "My webpack project"
 }

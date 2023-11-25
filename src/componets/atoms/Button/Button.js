@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './button.css';
+import styles from './button.module.css';
 
 /**
  * Primary UI component for user interaction
@@ -9,7 +9,7 @@ const Button = ({ type, backgroundColor, size, children, ...props }) => {
   return (
     <button
       type="button"
-      className={['button', `button-${size}`, `button-${type}`].join(' ')}
+      className={[styles.button, styles[`button-${size}`], styles[`button-${type}`]].join(' ')}
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
