@@ -6,9 +6,12 @@ const isProduction = process.env.NODE_ENV == "production";
 const stylesHandler = "style-loader";
 
 const config = {
-  entry: "./src/index.js",
+  entry: ["./src/index.js", "./src/styles/tokens.module.css"],
   output: {
     path: path.resolve(__dirname, "dist"),
+    library: "tech-mech-lib",
+    libraryTarget: "umd",
+    filename:"tech-mech-lib.js"
   },
   plugins: [
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
