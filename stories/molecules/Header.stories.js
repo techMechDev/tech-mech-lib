@@ -1,4 +1,4 @@
-import { Header } from '../../componets/molecules/Header/Header';
+import { Header } from '../../src/components/molecules/Header/Header';
 
 export default {
   title: 'Example/Header',
