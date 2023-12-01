@@ -7,20 +7,21 @@
   
 
 
-  --colors-brand-koromiko: #fcb64d;
-  --colors-brand-chiffon: #fefcb9;
-  --colors-brand-beige: #fefce7;
-  --colors-brand-cinnabar: #f04c39;
-  --colors-brand-mandyspink: #febb9f;
-  --colors-brand-dawnpink: #fcdcd9;
-  --colors-brand-bayofmany: #204282;
-  --colors-brand-poloblue: #8ea4ce;
-  --colors-brand-mystic: #eceff4;
-  --colors-brand-tuna: #494949;
-  --colors-brand-orange: #fc9e12;
+  --colors-brand-evil-lyn: #ffd803;
+  --colors-brand-frosty-mint: #e3f6f5;
+  --colors-brand-blue-karma: #bae8e8;
+  --colors-brand-violet-crush: #d9d4e7;
+  --colors-brand-manganese-red: #eb2d52;
+  --colors-brand-midnight-velvet: #272343;
+  --colors-brand-bunting: #2d334a;
+  --colors-brand-primary: #ffd803;
+  --colors-brand-secondary: #fffffe;
+  --colors-brand-tertiary: #e3f6f5;
+  --colors-brand-quaternary: #d9d4e7;
+  --colors-brand-quinary: #eb2d52;
   --colors-transparent: transparent;
-  --colors-black: #000;
-  --colors-white: #fff;
+  --colors-black: #272343;
+  --colors-white: #fffffe;
 
   --colors-gray-100: #f7fafc;
   --colors-gray-200: #edf2f7;
@@ -154,6 +155,7 @@
   --screens-max-lg: 1023px;
   --screens-max-xl: 1279px;
 
+  --font-family-brand: Poppins;
   --font-family-serif: Roboto Slab, "Times New Roman", serif;
   --font-family-sans: Apercu, Arial, sans-serif;
   --font-family-mono: "Roboto Mono", Consolas, monospace;
@@ -198,6 +200,9 @@
 
   --shadows-outline: 0 0 0 3px rgba(66, 153, 225, 0.5);
   --shadows-none: none;
+  --shadows-sm: 0px 4px 5px rgba(0, 0, 0, .07);
+  --shadows-base: 0px 4px 5px rgba(0, 0, 0, .17);
+  --shadows-lg: 0px 4px 5px rgba(0, 0, 0, .27);
 
   --shadows-down-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadows-down-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -226,11 +231,18 @@
   --opacity-75: 0.75;
   --opacity-100: 1;
 
+
   --border-radius-none: 0;
   --border-radius-sm: 0.125rem;
   --border-radius-md: 0.25rem;
   --border-radius-lg: 0.5rem;
   --border-radius-full: 9999px;
+  --border-radius-min: 4px;
+  --border-radius-base: 10px;
+  --border-radius-max: 20px;
+  --border-radius-polig: 30%;
+  --border-radius-round: 50%;
+  --border-size: 1px;
 
   --z-index-0: 0;
   --z-index-10: 10;
@@ -239,7 +251,28 @@
   --z-index-40: 40;
   --z-index-50: 50;
   --z-index-auto: auto;
+
+
+  --button-padding-sm: 8px 16px;
+  --button-padding-base: 10px 24px;
+  --button-padding-lg: 12px 36px;
   
+
+
+  --button-color-default: #272343;
+  --button-color-primary: undefined;
+  --button-color-secondary: undefined;
+  --button-color-tertiary: undefined;
+  --button-color-quaternary: undefined;
+  --button-color-quinary: undefined;
+
+
+  --button-border-color-primary: undefined;
+  --button-border-color-secondary: undefined;
+  --button-border-color-tertiary: undefined;
+  --button-border-color-quaternary: undefined;
+  --button-border-color-quinary: undefined;
+  --button-border-size: 1px;
 
   --title-font-family: Apercu, Arial, sans-serif;
   --title-font-weight: 700;
@@ -251,12 +284,12 @@
   --title-font-size-3: 1.125rem;
   --title-font-size-4: 1rem;
 
-  --title-color-default: #494949;
+  --title-color-default: undefined;
 
-  --title-color-alt-blue: #204282;
-  --title-color-alt-red: #f04c39;
-  --title-color-alt-yellow: #fefcb9;
-  --title-color-alt-orange: #fc9e12;
+  --title-color-alt-blue: undefined;
+  --title-color-alt-red: undefined;
+  --title-color-alt-yellow: undefined;
+  --title-color-alt-orange: undefined;
   --title-color-alt-gray: #2d3748;
 
   --subtitle-font-family: Roboto Slab, "Times New Roman", serif;
@@ -266,11 +299,11 @@
   --subtitle-font-size-1: 1.5rem;
   --subtitle-font-size-2: 1.125rem;
 
-  --subtitle-color-default: #494949;
+  --subtitle-color-default: undefined;
 
-  --subtitle-color-alt-blue: #204282;
-  --subtitle-color-alt-red: #f04c39;
-  --subtitle-color-alt-yellow: #fcb64d;
+  --subtitle-color-alt-blue: undefined;
+  --subtitle-color-alt-red: undefined;
+  --subtitle-color-alt-yellow: undefined;
   --subtitle-color-alt-gray: #2d3748;
 
   --label-font-family: Apercu, Arial, sans-serif;
@@ -283,7 +316,7 @@
 
   --eyebrow-font-size-1: 1.125rem;
   --eyebrow-font-size-2: .75rem;
-  --eyebrow-color: #494949;
+  --eyebrow-color: undefined;
 
   --paragraph-font-family: Apercu, Arial, sans-serif;
 
@@ -293,11 +326,11 @@
   --paragraph-font-size-sm: 1.125rem;
   --paragraph-font-size-md: 1.25rem;
 
-  --paragraph-color-default: #494949;
+  --paragraph-color-default: undefined;
 
-  --paragraph-color-alt-blue: #204282;
-  --paragraph-color-alt-red: #f04c39;
-  --paragraph-color-alt-yellow: #fefcb9;
+  --paragraph-color-alt-blue: undefined;
+  --paragraph-color-alt-red: undefined;
+  --paragraph-color-alt-yellow: undefined;
   --paragraph-color-alt-gray: #2d3748;
 
 

@@ -1,21 +1,22 @@
 const choices = {
     colors: {
         brand: {
-            koromiko: '#fcb64d',
-            chiffon: '#fefcb9',
-            beige: '#fefce7',
-            cinnabar: '#f04c39',
-            mandyspink: '#febb9f',
-            dawnpink: '#fcdcd9',
-            bayofmany: '#204282',
-            poloblue: '#8ea4ce',
-            mystic: '#eceff4',
-            tuna: '#494949',
-            orange: '#fc9e12'
+            evilLyn: '#ffd803', // primary
+            frostyMint: '#e3f6f5', // tertiary
+            blueKarma: '#bae8e8', 
+            violetCrush: '#d9d4e7', // quaternary
+            manganeseRed: '#eb2d52', // quinary
+            midnightVelvet: '#272343', // headline
+            bunting: '#2d334a', //paragraph
+            primary: '#ffd803',
+            secondary: '#fffffe',
+            tertiary: '#e3f6f5',
+            quaternary: '#d9d4e7',
+            quinary: '#eb2d52'
         },  
         transparent: 'transparent',  
-        black: '#000',
-        white: '#fff',  
+        black: '#272343',
+        white: '#fffffe',  
         gray: {
             100: '#f7fafc',
             200: '#edf2f7',
@@ -163,6 +164,7 @@ const choices = {
         }
     },
     fontFamily: {
+        brand: ['Poppins'],
         serif: ['Roboto Slab', '"Times New Roman"', 'serif'],
         sans: ['Apercu', 'Arial', 'sans-serif'],
         mono: ['"Roboto Mono"', 'Consolas', 'monospace']
@@ -213,6 +215,9 @@ const choices = {
     shadows: {
         outline: "0 0 0 3px rgba(66, 153, 225, 0.5)",
         none: 'none',
+        sm: '0px 4px 5px rgba(0, 0, 0, .07)',
+        base: '0px 4px 5px rgba(0, 0, 0, .17)',
+        lg: '0px 4px 5px rgba(0, 0, 0, .27)',
         down: {
             sm: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
             md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
@@ -246,12 +251,20 @@ const choices = {
         '75': '0.75',
         '100': '1'
     },
-    borderRadius: {
-        none: '0',
-        sm: '0.125rem',
-        md: '0.25rem',
-        lg: '0.5rem',
-        full: '9999px'
+    border: {
+        radius: {
+            none: '0',
+            sm: '0.125rem',
+            md: '0.25rem',
+            lg: '0.5rem',
+            full: '9999px',
+            min: '4px',
+            base: '10px',
+            max: '20px',
+            polig: '30%',
+            round: '50%'
+        },
+        size: '1px'
     },
     zIndex: {
         auto: 'auto',
@@ -261,10 +274,37 @@ const choices = {
         '30': '30',
         '40': '40',
         '50': '50'
+    },
+    button: {
+        padding: {
+            sm: '8px 16px',
+            base: '10px 24px',
+            lg: '12px 36px'
+        }
     }
 }
   
 const decisions = {
+    button: {
+        color: {
+            default: choices.colors.brand.midnightVelvet, // FIX: anidar al color del tilte o del paragraph depende del átomo a usar
+            primary: choices.colors.secondary, // TODO: Cambiar la extructura del componente Boton type es para la forma y no el color
+            secondary: choices.colors.primary,
+            tertiary: choices.colors.default,
+            quaternary: choices.colors.default,
+            quinary: choices.colors.secondary
+        },
+        border: {
+            color: {
+                primary: choices.colors.primary,
+                secondary: choices.colors.primary,
+                tertiary: choices.colors.tertiary,
+                quaternary: choices.colors.quaternary,
+                quinary: choices.colors.default
+            },
+            size: choices.border.size
+        }
+    },
     title: {
         fontFamily: choices.fontFamily.sans,
         fontWeight: choices.fontWeight.bold,
@@ -333,10 +373,10 @@ const decisions = {
         color: {
             default: choices.colors.brand.tuna,
             alt: {
-            blue: choices.colors.brand.bayofmany,
-            red: choices.colors.brand.cinnabar,
-            yellow: choices.colors.brand.chiffon,
-            gray: choices.colors.gray[800]
+                blue: choices.colors.brand.bayofmany,
+                red: choices.colors.brand.cinnabar,
+                yellow: choices.colors.brand.chiffon,
+                gray: choices.colors.gray[800]
             }
         }
     },
