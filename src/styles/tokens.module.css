@@ -1,5 +1,10 @@
+/* Building by buildTokens.js @techMechDev */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap');
+
 :root {
-    
+  
 
 
   --colors-brand-koromiko: #fcb64d;
@@ -234,7 +239,7 @@
   --z-index-40: 40;
   --z-index-50: 50;
   --z-index-auto: auto;
-    
+  
 
   --title-font-family: Apercu, Arial, sans-serif;
   --title-font-weight: 700;
