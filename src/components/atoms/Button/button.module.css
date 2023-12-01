@@ -1,12 +1,12 @@
 .button {
-  font-family: var(--font-family), sans-serif;
-  font-weight: var(--font-weigth-600);
-  border-radius: var(--radius-base);
+  font-family: var(--font-family-brand), var(--font-family-sans);
+  font-weight: var(--font-weigth-semibold);
+  border-radius: var(--border-radius-base);
   cursor: pointer;
   display: inline-block;
-  line-height: 1;
-  color: var(--color-button);
-  border: var(--border-button-size) solid transparent;
+  line-height: var(--line-height-none);
+  color: var(--button-color-default);
+  border: var(--button-border-size) solid transparent;
   transition: filter 100ms ease-in-out;
 }
 
@@ -22,49 +22,49 @@
 }
 
 .button-primary {
-  background-color: var(--color-primary);
-  color: var(--color-button-primary);
-  border-color: var(--border-color-button-primary);
+  background-color: var(--colors-brand-primary);
+  color: var(--button-color-primary);
+  border-color: var(--button-border-color-primary);
 }
 
 .button-secondary {
-  background-color: var(--background-color-light);
-  color: var(--color-button-secondary);
-  border-color: var(--border-color-button-secondary);
+  background-color: var(--colors-white);
+  color: var(--button-color-secondary);
+  border-color: var(--button-border-color-secondary);
 }
 
 .button-tertiary {
-  background-color: var(--color-tertiary);
-  color: var(--color-button-tertiary);
-  border-color: var(--border-color-button-tertiary);
+  background-color: var(--colors-brand-tertiary);
+  color: var(--button-color-tertiary);
+  border-color: var(--button-border-color-tertiary);
 }
 
 .button-quaternary {
-  background-color: var(--color-quaternary);
-  color: var(--color-button-quaternary);
-  border-color: var(--border-color-button-quaternary);
+  background-color: var(--colors-brand-quaternary);
+  color: var(--button-color-quaternary);
+  border-color: var(--button-border-color-quaternary);
 }
 
 .button-quinary {
-  background-color: var(--color-quinary);
-  color: var(--color-button-quinary);
-  border-color: var(--border-color-button-quinary);
+  background-color: var(--colors-brand-quinary);
+  color: var(--button-color-quinary);
+  border-color: var(--button-border-color-quinary);
 }
 
 .button-small {
   font-size: var(--font-size-sm);
-  padding: var(--padding-button-sm);
-  box-shadow: var(--box-shadow-sm);
+  padding: var(--button-padding-sm);
+  box-shadow: var(--shadows-sm);
 }
 
 .button-medium {
-  font-size: var(--font-size-base);
-  padding: var(--padding-button-base);
-  box-shadow: var(--box-shadow-base);
+  font-size: var(--font-size-md);
+  padding: var(--button-padding-base);
+  box-shadow: var(--shadows-base);
 }
 
 .button-large {
   font-size: var(--font-size-lg);
-  padding: var(--padding-button-lg);
-  box-shadow: var(--box-shadow-lg);
+  padding: var(--button-padding-lg);
+  box-shadow: var(--shadows-lg);
 }

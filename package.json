@@ -12,9 +12,9 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "build:clean": "node ./scripts/clean.js",
-    "build:lib": "npx babel ./src --out-dir ./lib",
     "build:tokens": "node ./scripts/buildTokens",
     "build:copy": "node ./scripts/copy.js",
+    "build:lib": "npx babel ./src --out-dir ./lib && npm run build:tokens && npm run build:copy",
     "build:dist": "webpack",
     "build:pro": "npm run build:clean && npm run build:lib && npm run build:tokens && npm run build:copy && npm run build:dist"
   },
