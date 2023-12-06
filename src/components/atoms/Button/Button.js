@@ -24,7 +24,7 @@ Button.propTypes = {
   /**
    * Is this the principal call to action on the page?
    */
-  type: PropTypes.oneOf['primary', 'secondary',  'tertiary', 'quaternary', 'quinary'],
+  type: PropTypes.oneOf(['primary', 'secondary',  'tertiary', 'quaternary', 'quinary']),
   /**
    * What background color to use
    */
