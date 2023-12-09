@@ -8,6 +8,7 @@
     "lib"
   ],
   "scripts": {
+    "new:component": "node ./scripts/create-component.js",
     "test": "jest --silent=false",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
