@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './component.module.css';
+import styles from './Component.module.css';
 
 /**
  * UI component for user interaction
@@ -8,7 +8,7 @@ import styles from './component.module.css';
 const Component = ({ children }) => {
   return (
     <section
-      className={styles.component}
+      className={styles.Component}
     >
       {children}
     </section>
@@ -24,6 +24,6 @@ Component.propTypes = {
   children: PropTypes.node.isRequired
 };
 
-Button.defaultProps = {
-    
+Component.defaultProps = {
+
 };

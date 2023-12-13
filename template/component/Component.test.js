@@ -4,7 +4,7 @@ import { render, screen } from '@testing-library/react';
 
 
 test('render', ()=>{
-    const { unmount, rerender } = render(<Component children={'boton 1'}/>);
+    const { unmount, rerender } = render(<Component children={'example'}/>);
     screen.debug();
     unmount();
 })
