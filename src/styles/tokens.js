@@ -264,7 +264,9 @@ const choices = {
             polig: '30%',
             round: '50%'
         },
-        size: '1px'
+        size: '1px',
+        sizese: '.5px',
+        style: 'solid'
     },
     zIndex: {
         auto: 'auto',
@@ -275,34 +277,190 @@ const choices = {
         '40': '40',
         '50': '50'
     },
-    button: {
-        padding: {
+    padding: {
+        button: {
             sm: '8px 16px',
             base: '10px 24px',
             lg: '12px 36px'
+        }
+    },
+    transition: {
+        duration: {
+            '100': '100ms',
+            '200': '200ms',
+            '300': '300ms',
+            '400': '400ms',
+            '500': '500ms',
+            '600': '600ms',
+            '700': '700ms',
+            '800': '800ms',
+            '900': '900ms',
+            '1': '1s'
         }
     }
 }
   
 const decisions = {
     button: {
+        backgroundColor: {
+            primary: choices.colors.brand.primary,
+            secondary: choices.colors.brand.secondary
+        },
         color: {
             default: choices.colors.brand.midnightVelvet, // FIX: anidar al color del tilte o del paragraph depende del átomo a usar
-            primary: choices.colors.secondary, // TODO: Cambiar la extructura del componente Boton type es para la forma y no el color
-            secondary: choices.colors.primary,
-            tertiary: choices.colors.default,
-            quaternary: choices.colors.default,
-            quinary: choices.colors.secondary
+            primary: choices.colors.brand.secondary, // TODO: Cambiar la extructura del componente Boton type es para la forma y no el color
+            secondary: choices.colors.brand.primary,
+            tertiary: choices.colors.brand.default,
+            quaternary: choices.colors.brand.default,
+            quinary: choices.colors.brand.secondary
         },
         border: {
+            default: `${choices.border.size} solid transparent`,
             color: {
-                primary: choices.colors.primary,
-                secondary: choices.colors.primary,
-                tertiary: choices.colors.tertiary,
-                quaternary: choices.colors.quaternary,
-                quinary: choices.colors.default
+                primary: choices.colors.brand.primary,
+                secondary: choices.colors.brand.primary,
+                tertiary: choices.colors.brand.tertiary,
+                quaternary: choices.colors.brand.quaternary,
+                quinary: choices.colors.brand.default,
+                blockStart: { //top
+                    primary: choices.colors.brand.primary,
+                    secondary: choices.colors.brand.primary,
+                    tertiary: choices.colors.brand.tertiary,
+                    quaternary: choices.colors.brand.quaternary,
+                    quinary: choices.colors.brand.default
+                },
+                inlineEnd: { //right
+                    primary: choices.colors.brand.primary,
+                    secondary: choices.colors.brand.primary,
+                    tertiary: choices.colors.brand.tertiary,
+                    quaternary: choices.colors.brand.quaternary,
+                    quinary: choices.colors.brand.default
+                },
+                blockEnd: { //bottom
+                    primary: choices.colors.brand.primary,
+                    secondary: choices.colors.brand.primary,
+                    tertiary: choices.colors.brand.tertiary,
+                    quaternary: choices.colors.brand.quaternary,
+                    quinary: choices.colors.brand.default
+                },
+                inlineStart: { //left
+                    primary: choices.colors.brand.primary,
+                    secondary: choices.colors.brand.primary,
+                    tertiary: choices.colors.brand.tertiary,
+                    quaternary: choices.colors.brand.quaternary,
+                    quinary: choices.colors.brand.default
+                }
             },
-            size: choices.border.size
+            size: {
+                primary: choices.border.size,
+                secondary: choices.border.size,
+                tertiary: choices.border.size,
+                quaternary: choices.border.size,
+                quinary: choices.border.size,
+                blockStart: {
+                    primary: choices.border.sizese,
+                    secondary: choices.border.sizese,
+                    tertiary: choices.border.sizese,
+                    quaternary: choices.border.sizese,
+                    quinary: choices.border.sizese
+                },
+                inlineEnd: {
+                    primary: choices.border.sizese,
+                    secondary: choices.border.sizese,
+                    tertiary: choices.border.sizese,
+                    quaternary: choices.border.sizese,
+                    quinary: choices.border.sizese
+                },
+                blockEnd: {
+                    primary: choices.border.sizese,
+                    secondary: choices.border.sizese,
+                    tertiary: choices.border.sizese,
+                    quaternary: choices.border.sizese,
+                    quinary: choices.border.sizese
+                },
+                inlineStart: {
+                    primary: choices.border.sizese,
+                    secondary: choices.border.sizese,
+                    tertiary: choices.border.sizese,
+                    quaternary: choices.border.sizese,
+                    quinary: choices.border.sizese
+                }
+            },
+            style: {
+                primary: choices.border.style,
+                secondary: choices.border.style,
+                tertiary: choices.border.style,
+                quaternary: choices.border.style,
+                quinary: choices.border.style,
+                blockStart: {
+                    primary: choices.border.style,
+                    secondary: choices.border.style,
+                    tertiary: choices.border.style,
+                    quaternary: choices.border.style,
+                    quinary: choices.border.style
+                },
+                inlineEnd: {
+                    primary: choices.border.style,
+                    secondary: choices.border.style,
+                    tertiary: choices.border.style,
+                    quaternary: choices.border.style,
+                    quinary: choices.border.style
+                },
+                blockEnd: {
+                    primary: choices.border.style,
+                    secondary: choices.border.style,
+                    tertiary: choices.border.style,
+                    quaternary: choices.border.style,
+                    quinary: choices.border.style
+                },
+                inlineStart: {
+                    primary: choices.border.style,
+                    secondary: choices.border.style,
+                    tertiary: choices.border.style,
+                    quaternary: choices.border.style,
+                    quinary: choices.border.style
+                }
+            },
+            radius: {
+                primary: choices.border.radius.base,
+                secondary: choices.border.radius.base,
+                tertiary: choices.border.radius.base,
+                quaternary: choices.border.radius.base,
+                quinary: choices.border.radius.base,
+                startStart: {
+                    primary: choices.border.radius.base,
+                    secondary: choices.border.radius.base,
+                    tertiary: choices.border.radius.base,
+                    quaternary: choices.border.radius.base,
+                    quinary: choices.border.radius.base
+                },
+                startEnd: {
+                    primary: choices.border.radius.base,
+                    secondary: choices.border.radius.base,
+                    tertiary: choices.border.radius.base,
+                    quaternary: choices.border.radius.base,
+                    quinary: choices.border.radius.base
+                },
+                endEnd: {
+                    primary: choices.border.radius.base,
+                    secondary: choices.border.radius.base,
+                    tertiary: choices.border.radius.base,
+                    quaternary: choices.border.radius.base,
+                    quinary: choices.border.radius.base
+                },
+                endStart: {
+                    primary: choices.border.radius.base,
+                    secondary: choices.border.radius.base,
+                    tertiary: choices.border.radius.base,
+                    quaternary: choices.border.radius.base,
+                    quinary: choices.border.radius.base
+                }
+            }
+        },
+        transition: `filter ${choices.transition.duration[100]} ease-in-out`,
+        filter: {
+            hover: 'brightness(1.1)',
+            active: 'brightness(.9)'
         }
     },
     title: {

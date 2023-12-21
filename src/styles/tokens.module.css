@@ -243,6 +243,8 @@
   --border-radius-polig: 30%;
   --border-radius-round: 50%;
   --border-size: 1px;
+  --border-sizese: .5px;
+  --border-style: solid;
 
   --z-index-0: 0;
   --z-index-10: 10;
@@ -253,26 +255,159 @@
   --z-index-auto: auto;
 
 
-  --button-padding-sm: 8px 16px;
-  --button-padding-base: 10px 24px;
-  --button-padding-lg: 12px 36px;
+  --padding-button-sm: 8px 16px;
+  --padding-button-base: 10px 24px;
+  --padding-button-lg: 12px 36px;
+
+
+  --transition-duration-1: 1s;
+  --transition-duration-100: 100ms;
+  --transition-duration-200: 200ms;
+  --transition-duration-300: 300ms;
+  --transition-duration-400: 400ms;
+  --transition-duration-500: 500ms;
+  --transition-duration-600: 600ms;
+  --transition-duration-700: 700ms;
+  --transition-duration-800: 800ms;
+  --transition-duration-900: 900ms;
   
 
 
+  --button-background-color-primary: #ffd803;
+  --button-background-color-secondary: #fffffe;
+
   --button-color-default: #272343;
-  --button-color-primary: undefined;
-  --button-color-secondary: undefined;
+  --button-color-primary: #fffffe;
+  --button-color-secondary: #ffd803;
   --button-color-tertiary: undefined;
   --button-color-quaternary: undefined;
-  --button-color-quinary: undefined;
+  --button-color-quinary: #fffffe;
 
+  --button-border-default: 1px solid transparent;
 
-  --button-border-color-primary: undefined;
-  --button-border-color-secondary: undefined;
-  --button-border-color-tertiary: undefined;
-  --button-border-color-quaternary: undefined;
+  --button-border-color-primary: #ffd803;
+  --button-border-color-secondary: #ffd803;
+  --button-border-color-tertiary: #e3f6f5;
+  --button-border-color-quaternary: #d9d4e7;
   --button-border-color-quinary: undefined;
-  --button-border-size: 1px;
+
+  --button-border-color-block-start-primary: #ffd803;
+  --button-border-color-block-start-secondary: #ffd803;
+  --button-border-color-block-start-tertiary: #e3f6f5;
+  --button-border-color-block-start-quaternary: #d9d4e7;
+  --button-border-color-block-start-quinary: undefined;
+
+  --button-border-color-inline-end-primary: #ffd803;
+  --button-border-color-inline-end-secondary: #ffd803;
+  --button-border-color-inline-end-tertiary: #e3f6f5;
+  --button-border-color-inline-end-quaternary: #d9d4e7;
+  --button-border-color-inline-end-quinary: undefined;
+
+  --button-border-color-block-end-primary: #ffd803;
+  --button-border-color-block-end-secondary: #ffd803;
+  --button-border-color-block-end-tertiary: #e3f6f5;
+  --button-border-color-block-end-quaternary: #d9d4e7;
+  --button-border-color-block-end-quinary: undefined;
+
+  --button-border-color-inline-start-primary: #ffd803;
+  --button-border-color-inline-start-secondary: #ffd803;
+  --button-border-color-inline-start-tertiary: #e3f6f5;
+  --button-border-color-inline-start-quaternary: #d9d4e7;
+  --button-border-color-inline-start-quinary: undefined;
+
+  --button-border-size-primary: 1px;
+  --button-border-size-secondary: 1px;
+  --button-border-size-tertiary: 1px;
+  --button-border-size-quaternary: 1px;
+  --button-border-size-quinary: 1px;
+
+  --button-border-size-block-start-primary: .5px;
+  --button-border-size-block-start-secondary: .5px;
+  --button-border-size-block-start-tertiary: .5px;
+  --button-border-size-block-start-quaternary: .5px;
+  --button-border-size-block-start-quinary: .5px;
+
+  --button-border-size-inline-end-primary: .5px;
+  --button-border-size-inline-end-secondary: .5px;
+  --button-border-size-inline-end-tertiary: .5px;
+  --button-border-size-inline-end-quaternary: .5px;
+  --button-border-size-inline-end-quinary: .5px;
+
+  --button-border-size-block-end-primary: .5px;
+  --button-border-size-block-end-secondary: .5px;
+  --button-border-size-block-end-tertiary: .5px;
+  --button-border-size-block-end-quaternary: .5px;
+  --button-border-size-block-end-quinary: .5px;
+
+  --button-border-size-inline-start-primary: .5px;
+  --button-border-size-inline-start-secondary: .5px;
+  --button-border-size-inline-start-tertiary: .5px;
+  --button-border-size-inline-start-quaternary: .5px;
+  --button-border-size-inline-start-quinary: .5px;
+
+  --button-border-style-primary: solid;
+  --button-border-style-secondary: solid;
+  --button-border-style-tertiary: solid;
+  --button-border-style-quaternary: solid;
+  --button-border-style-quinary: solid;
+
+  --button-border-style-block-start-primary: solid;
+  --button-border-style-block-start-secondary: solid;
+  --button-border-style-block-start-tertiary: solid;
+  --button-border-style-block-start-quaternary: solid;
+  --button-border-style-block-start-quinary: solid;
+
+  --button-border-style-inline-end-primary: solid;
+  --button-border-style-inline-end-secondary: solid;
+  --button-border-style-inline-end-tertiary: solid;
+  --button-border-style-inline-end-quaternary: solid;
+  --button-border-style-inline-end-quinary: solid;
+
+  --button-border-style-block-end-primary: solid;
+  --button-border-style-block-end-secondary: solid;
+  --button-border-style-block-end-tertiary: solid;
+  --button-border-style-block-end-quaternary: solid;
+  --button-border-style-block-end-quinary: solid;
+
+  --button-border-style-inline-start-primary: solid;
+  --button-border-style-inline-start-secondary: solid;
+  --button-border-style-inline-start-tertiary: solid;
+  --button-border-style-inline-start-quaternary: solid;
+  --button-border-style-inline-start-quinary: solid;
+
+  --button-border-radius-primary: 10px;
+  --button-border-radius-secondary: 10px;
+  --button-border-radius-tertiary: 10px;
+  --button-border-radius-quaternary: 10px;
+  --button-border-radius-quinary: 10px;
+
+  --button-border-radius-start-start-primary: 10px;
+  --button-border-radius-start-start-secondary: 10px;
+  --button-border-radius-start-start-tertiary: 10px;
+  --button-border-radius-start-start-quaternary: 10px;
+  --button-border-radius-start-start-quinary: 10px;
+
+  --button-border-radius-start-end-primary: 10px;
+  --button-border-radius-start-end-secondary: 10px;
+  --button-border-radius-start-end-tertiary: 10px;
+  --button-border-radius-start-end-quaternary: 10px;
+  --button-border-radius-start-end-quinary: 10px;
+
+  --button-border-radius-end-end-primary: 10px;
+  --button-border-radius-end-end-secondary: 10px;
+  --button-border-radius-end-end-tertiary: 10px;
+  --button-border-radius-end-end-quaternary: 10px;
+  --button-border-radius-end-end-quinary: 10px;
+
+  --button-border-radius-end-start-primary: 10px;
+  --button-border-radius-end-start-secondary: 10px;
+  --button-border-radius-end-start-tertiary: 10px;
+  --button-border-radius-end-start-quaternary: 10px;
+  --button-border-radius-end-start-quinary: 10px;
+  --button-transition: filter 100ms ease-in-out;
+
+  --button-filter-hover: brightness(1.1);
+  --button-filter-active: brightness(.9);
 
   --title-font-family: Apercu, Arial, sans-serif;
   --title-font-weight: 700;
